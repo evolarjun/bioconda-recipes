@@ -1,6 +1,6 @@
 {% set name = "kma" %}
-{% set version = "1.2.6" %}
-{% set sha256 = "1fe0392493ff6cb88cdbb150db1b48c464df3cd8a981da3282e58c4f388e461d" %}
+{% set version = "1.2.19" %}
+{% set sha256 = "89f7f69f2a494b594a66def7f20896d1cc5b5718f5ddede430740b1fb5701aa3" %}
 
 package:
   name: {{ name|lower }}
