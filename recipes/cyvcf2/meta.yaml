@@ -1,6 +1,6 @@
 {% set name = "cyvcf2" %}
-{% set version = "0.20.0" %}
-{% set sha256hash = "a7d4d05db2bcb391b248e0a01c0502486e3616f46df752e99783000fbc7f44fd" %}
+{% set version = "0.20.3" %}
+{% set sha256hash = "a6d59c6e2f209d0fe5ff041deba917795b6b7f14676710cd7d6f90fb0c6467a6" %}
 
 package:
   name: {{ name|lower }}
@@ -41,6 +41,7 @@ requirements:
     # htslib version fixed by conda_build_config.yaml
     - htslib
     - openssl
+    - pathlib2  # [py<34]
 
 test:
   imports:

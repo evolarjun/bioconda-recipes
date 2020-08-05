@@ -1,10 +1,10 @@
 package:
   name: fwdpy11
-  version: "0.6.4"
+  version: "0.8.3"
 
 source:
-  url: https://files.pythonhosted.org/packages/e9/d1/3d9f23198f35efaed2d49339ed4aed2d55100e187d0bb67646a646cfaf29/fwdpy11-0.6.4.tar.gz
-  sha256: dd6794c661d56f2aa00a18e32ba62808777e94708f128fa7b4c72366b3c457e7
+  url: https://files.pythonhosted.org/packages/0c/bc/3f665d591ad9603576c2251673ae66081995b478597741e81326af17aa12/fwdpy11-0.8.3.tar.gz
+  sha256: a31994c75ec0d42fd2e9f6579e975507defbe46083c5067bc768db32e15f60bb
 
 build:
   skip: True # [py27]
@@ -21,16 +21,20 @@ requirements:
     - pip
     - numpy >=1.10
     - pybind11 >=2.4.3
-    - tskit >=0.1.5
+    - tskit >=0.2.3
     - gsl
     - openblas
+    - attrs
+    - setuptools_scm
   run:
     - python
     - numpy >=1.10
-    - tskit >=0.1.5
+    - tskit >=0.2.3
     - gsl
     - openblas
     - sparse
+    - attrs
+    - black
 
 test:
   # Python imports
